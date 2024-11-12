@@ -1,0 +1,4 @@
+### add csv for Output of the responces
+ #### remove extra commansa and other thinsg 
+ #### make it such that for different time same place names 
+ #### comapre method to take 2 place names 
