@@ -19,12 +19,15 @@ public class DataCreaterApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// Example places to query
-		String place = "Paris";
+		String place = "Baripada";
 
 		// Example of asking general questions
-		String historicalFacts = groqService.askQuestion("historical_facts", place);
+		// String historicalFacts = groqService.askQuestion("historical_facts", place);
 		// System.out.println("Historical Facts about " + place + ": " +
 		// historicalFacts);
+		String popularPlaces = groqService.askQuestion("famous_places", place);
+		System.out.println("famous_places Facts about " + place + ": " +
+				popularPlaces);
 
 		// Example of asking comparison-related questions
 		// String attractions = groqService.askComparisonQuestion("attractions", place);
@@ -32,8 +35,9 @@ public class DataCreaterApplication implements CommandLineRunner {
 		System.out.println("-----------------------------------------------");
 
 		// Example of asking fun facts
-		String funFacts = groqService.askFunFactsQuestion("fun_facts", place);
+		// String funFacts = groqService.askFunFactsQuestion("fun_facts", place);
 		// System.out.println("Fun Facts about " + place + ": " + funFacts);
-		System.out.println(groqService.checkIfPlaceIsGeographic("Rairangpur"));
+
+		// System.out.println(groqService.checkIfPlaceIsGeographic("Rairangpur"));
 	}
 }
