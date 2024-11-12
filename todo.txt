@@ -2,3 +2,5 @@
  #### remove extra commansa and other thinsg 
  #### make it such that for different time same place names 
  #### comapre method to take 2 place names 
+ ####csv upload to s3 
+ #### docker file
