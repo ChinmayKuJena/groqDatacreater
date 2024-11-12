@@ -120,6 +120,7 @@ public class GroqService {
         return askGroq(formattedPrompt);
     }
 
+    // TODO for 2 place names
     // Method to ask comparison type questions using a place
     public String askComparisonQuestion(String promptType, String place) {
         // Get the comparison prompt from the library and format it with the place
