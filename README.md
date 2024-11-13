@@ -13,7 +13,7 @@ This service allows you to interact with the Groq API to ask geographic and plac
 ## Configuration
 The service requires the following configuration in the pplication.properties file:
 - **groq.apiKey**: Your Groq API key.
-- **groq.apiUrl**: The Groq API URL.
+- **groq.apiUrl**: https://api.groq.com/openai/v1/chat/completions
 
 ## Usage
 To use this service, simply inject the GroqService into your Spring Boot application and call the respective methods, passing in a place or question as a parameter. The service will send the request to the Groq API and return the response.
